@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=MuseoModerno:wght@100;200;300;400&family=Oswald:wght@200;300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;500&family=Roboto:ital,wght@0,100;1,400&display=swap"
+        rel="stylesheet" />
+
+    <!-- swiper css link -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+</head>
+
+<body class="font-custom tracking-wider relative">
+    <!-- Top Hreader Starts -->
+
+    <header class="bg-c_gray py-3 px-2 hidden md:block  md:ml-">
+        <div class="container flex justify-between items-center ">
+            <p class="md:text-sm">Please Call us to check the Stock before Placing the ord...</p>
+
+            <div class="top_right_header w-1/2">
+                <ul class="flex md:text-sm">
+                    <li class="border-r md:px-0  lg:px-5">Call: 09678-300400</li>
+                    <li class="border-r md:px-3 lg:px-5">
+                        <a href="#" class="text_hover">FB Page</a>
+                    </li>
+                    <li class="border-r px-5">
+                        <a href="#" class="text_hover">FB Group</a>
+                    </li>
+                    <li class="border-r px-5">
+                        <a href="#" class="text_hover">Pay Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Hreader  ends -->
+
+    <!-- seconde top Header  starts -->
+
+    <div >
+        <header>
+            <div class="container ml-2 flex flex-col md:flex-row md:justify-between md:items-center lg:mt-4">
+
+                <div class="first_t_hea_right flex items-center box-border ">
+                    <img src="img/logo.jpg" alt="logo " class="  w-1/3 md:w-72 md:h-10 h-5 md:mr-2 " />
+
+                    <div class="w-2/3 ">
+                        <form action="#">
+                            <input type="search" name="search" id="search" placeholder="Search Produts"
+                            class="bg-c_gray  py-2 px-2 w-46  lg:w-64 rounded" />
+                        <button class="bg-c_primary  rounded py-[.6rem] text-white px-[.6rem] text-sm">
+                            search
+                        </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="second_t_hea_left lg:w-1/3 pb-3 w-full md:w-80 mt-4 lg:mt-0 flex  justify-around items-center">
+                    <a href="#"><i class="fa fa-heart fa-2x text_hover"> </i></a>
+                    <a href="#"><i class="fa fa-cart-plus fa-2x text_hover"> </i></a>
+                    <div>
+                        <a href="#" class="text_hover"> <i class="fa fa-user fa-2x"></i> <span>Login / Register</span> </a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+    </div>
+
+    <!-- seconde top Header ends -->
+
+    <!-- menu links  starts -->
+    <menu>
+        <div class=" absolute ml-2 top-24 lg:left-9 md:left-0 md:mt-4" >
+            <div class="container mt-4 flex bg-c_primary text-white justify-around items-center py-3 space-x-8 w-[100vw] px-[2.5rem] rounded-sm">
+                <!-- dropdown links -->
+                <div class="relative">
+                    <a href="#" id="dropdown_links"  data-dropdown-toggle="dropdown"><i class="fa-solid fa-bars sm:text-xl md:text-sm"></i>
+                        <span class="hidden md:inline-block">Shop By Category</span>  
+                        <i class="ri-arrow-down-s-fill hidden md:inline-block"></i>
+                    </a>
+    
+                    <div id="dropdown" class="z-50 absolute top-10 bg-white w-full px-3 py-2 rounded hidden">
+                        <ul class="space-y-2" aria-labelledby="dropdown_links">
+                            <li><a href="shop_page.html" class="text-black hover:text-c_primary">Computer</a></li>
+                            <li><a href="#" class="text-black hover:text-c_primary">Laptop</a></li>
+                            <li><a href="#" class="text-black hover:text-c_primary">Microphone</a></li>
+                            <li><a href="#" class="text-black hover:text-c_primary">Watch</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- other menu links -->
+                <ul class="hidden md:flex items-center justify-center gap-3">
+                    <li>
+                        <a href="#">Microphone <i class="ri-arrow-down-s-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Mobile <i class="ri-arrow-down-s-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Laptop <i class="ri-arrow-down-s-fill"></i></a>
+                    </li>
+                </ul>
+    
+                <p class="md:hidden lg:block">
+                    <i class="fa-solid fa-phone ml-2 md:mr-3"></i>
+                    <span>Hotline: 09678-300400</span>
+                </p>
+
+            </div>
+        </div>
+    </menu>
+    <!-- menu links  ends -->
+
+    <!-- hero banner starts -->
+
+    <main>
+        <div class="container ml-2 lg:ml-10 mt-20 md:mt-24 flex items-center gap-2">
+            <swiper-container class="w-2/3 border">
+              
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="#"><img class="h-[380px] w-full" src="img/banner1.jpg"
+                        alt="" /></a></div>
+                      <div class="swiper-slide"><a href="#"><img class="h-[380px] w-full" src="img/banner2.jpg"
+                        alt="" /></a></div>
+                      <div class="swiper-slide"><a href="#"><img class="h-[380px] w-full" src="img/anner4.jpg"
+                        alt="" /></a></div>
+                      <div class="swiper-slide"><a href="#"><img class="h-[380px] w-full" src="img/banner3.jpg"
+                        alt="" /></a></div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+            </swiper-container>
+
+            <div class="banner_right_side w-1/3">
+                <a href="#"><img src="img/side_banner1.jpg" alt="side_banner" /></a>
+                <a href="#"><img src="img/side_banner2.jpg" alt="side_banner" /></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- hero banner ends -->
+
+    <!-- featured categories starts -->
+
+    <section id="feature">
+        <div class="container">
+            <div class="feature_txt text-center ml-2 my-10">
+                <h1 class="font-bold">FEATURED CATEGORIES</h1>
+                <p >Get your desired product from featured category</p>
+            </div>
+
+            <!-- feature items -->
+            <div class="grid ml-2 grid-cols-3 md:grid-cols-4 space-x-2 space-y-5 ">
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-drone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-phone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-drone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-phone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-drone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-phone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-drone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-drone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-phone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+
+                <div class="bg-c_gray py-4 px-6 rounded hover:bg-c_primary transition duration-200 m-auto">
+                    <a href="#" class="feature_card block">
+                        <img src="img/fea-drone.png" alt="" class="w-20 h-20" />
+                        <h4 class="text-center mt-3 font-bold">Drone</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured categories ends -->
+
+    <!-- Featured Products starts -->
+
+    <section id="feature_products">
+        <div class="container my-10">
+            <div class="fea_pro_text">
+                <h1 class="text-center text-xl font-bold">Featured Products</h1>
+            </div>
+
+            <!-- Tab btns starts-->
+
+            <div class="tab_box my-4 flex justify-center gap-3">
+                <button class="tab_btn text-xs md:text-sm font-medium active_btn hover:c_primary">
+                    NEW ARRIVAL
+                </button>
+                <button class="tab_btn text-xs md:text-sm font-medium hover:text-c_primary">
+                    DEAL OF THE DAY
+                </button>
+                <button class="tab_btn text-xs md:text-sm font-medium hover:text-c_primary">
+                    BEST DEALS
+                </button>
+                <button class="tab_btn text-xs md:text-sm font-medium hover:text-c_primary">
+                    BEST SELLERS
+                </button>
+            </div>
+            <!-- Tab btns ends -->
+
+            <!-- products card -->
+            <div class="produc_cards_box">
+                <!-- new arrival -->
+
+                <div class="active_produc_card content">
+                    <div class="grid grid-cols-2 ml-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 ">
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="prod_detail.html" class="w-[145px] h-[145px] group">
+                                    <img src="img/macbook.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="cart.html" class="btn_fill text-white">Order Now</a>
+                                    <a href="cart.html" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/nothing phone.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/galaxy.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/galaxy.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <!-- DEAL OF THE DAY -->
+                <div class=" content">
+                    <div class="grid grid-cols-2 ml-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 ">
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/macbook.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/nothing phone.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/galaxy.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/galaxy.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <!-- BEST DEALS -->
+                <div class=" content">
+                    <div class="grid grid-cols-2 ml-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 ">
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/macbook.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/nothing phone.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/galaxy.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/galaxy.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <!-- BEST SELLERS -->
+                <div class=" content">
+                    <div class="grid grid-cols-2 ml-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 ">
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/macbook.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/nothing phone.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/galaxy.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                        <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+    
+                            <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+    
+                            <div>
+                                <a href="#" class="w-[145px] h-[145px] group">
+                                    <img src="img/galaxy.jpg" alt="" class="" />
+    
+                                    <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                                </a>
+                            </div>
+    
+                            <div class="price my-2">
+                                <small class="text-c_primary font-bold">৳১০০০ </small>
+                                <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                            </div>
+                                <div class=" flex flex-col text-center gap-2">
+                                    <a href="#" class="btn_fill text-white">Order Now</a>
+                                    <a href="#" class="btn_empty">Add to card</a>
+                                </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products ends -->
+
+    <!-- add banner -->
+    <section id="banner">
+        <div class="container">
+            <div class="flex gap-x-4 flex-col md:flex-row">
+                <div><a href="#"><img class="w-full h-full" src="img/add-banner.jpg" alt=""></a></div>
+                <div><a href="#"><img class="w-full h-full" src="img/add-banner-2.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- new arrival gadgets starts -->
+
+    <section id="new_arrival_gadgets">
+        <div class="container my-10">
+            <div class="new_arri_text">
+                <h1 class="font-bold text-xl my-10 text-center">
+                    New Arrival Gadgets
+                </h1>
+            </div>
+
+            <div class="active_produc_card content">
+                <div class="grid grid-cols-2 ml-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 ">
+                    <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+
+                        <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+
+                        <div>
+                            <a href="#" class="w-[145px] h-[145px] group">
+                                <img src="img/macbook.jpg" alt="" class="" />
+
+                                <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                            </a>
+                        </div>
+
+                        <div class="price my-2">
+                            <small class="text-c_primary font-bold">৳১০০০ </small>
+                            <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                        </div>
+                            <div class=" flex flex-col text-center gap-2">
+                                <a href="#" class="btn_fill text-white">Order Now</a>
+                                <a href="#" class="btn_empty">Add to card</a>
+                            </div>
+                    </div>
+
+                    <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+
+                        <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+
+                        <div>
+                            <a href="#" class="w-[145px] h-[145px] group">
+                                <img src="img/nothing phone.jpg" alt="" class="" />
+
+                                <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                            </a>
+                        </div>
+
+                        <div class="price my-2">
+                            <small class="text-c_primary font-bold">৳১০০০ </small>
+                            <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                        </div>
+                            <div class=" flex flex-col text-center gap-2">
+                                <a href="#" class="btn_fill text-white">Order Now</a>
+                                <a href="#" class="btn_empty">Add to card</a>
+                            </div>
+                    </div>
+
+                    <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+
+                        <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+
+                        <div>
+                            <a href="#" class="w-[145px] h-[145px] group">
+                                <img src="img/galaxy.jpg" alt="" class="" />
+
+                                <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                            </a>
+                        </div>
+
+                        <div class="price my-2">
+                            <small class="text-c_primary font-bold">৳১০০০ </small>
+                            <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                        </div>
+                            <div class=" flex flex-col text-center gap-2">
+                                <a href="#" class="btn_fill text-white">Order Now</a>
+                                <a href="#" class="btn_empty">Add to card</a>
+                            </div>
+                    </div>
+
+                    <div class="card border m-auto hover:shadow-lg rounded-md transition duration-200 py-5 px-8 relative">
+
+                        <div class="absolute -top-0 left-0 border  py-1 px-2 bg-c_primary"><p class="text-xs lg:text-sm text-white">20% OFF</p></div>
+
+                        <div>
+                            <a href="#" class="w-[145px] h-[145px] group">
+                                <img src="img/galaxy.jpg" alt="" class="" />
+
+                                <small class="group-hover:text-c_primary">Macbook Air Mini 23.13 kmjn</small>
+                            </a>
+                        </div>
+
+                        <div class="price my-2">
+                            <small class="text-c_primary font-bold">৳১০০০ </small>
+                            <del><small class="text-c_primary font-bold">৳২০০০</small></del>
+                        </div>
+                            <div class=" flex flex-col text-center gap-2">
+                                <a href="#" class="btn_fill text-white">Order Now</a>
+                                <a href="#" class="btn_empty">Add to card</a>
+                            </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- new arrival gadgets ends -->
+
+    <!-- shop by brand starts -->
+
+    <section id="shop_by_brand">
+        <div class="container">
+            <div class="shop_by_brand_text">
+                <h1 class="font-bold text-xl text-center my-10">
+                    Shop By Brands
+                </h1>
+            </div>
+
+            <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-3">
+                <div class="border hover:border-c_primary transition rounded-md"><a href="#"><img src="img/apple.png" alt=""></a></div>
+                <div class="border hover:border-c_primary transition rounded-md"> <a href="#"><img src="img/google.png" alt=""></a></div>
+                <div class="border hover:border-c_primary transition rounded-md"> <a href="#"><img src="img/oneplus.png" alt=""></a></div>
+                <div class="border hover:border-c_primary transition rounded-md"> <a href="#"><img src="img/xiaomi.png" alt=""></a></div>
+                <div class="border hover:border-c_primary transition rounded-md"> <a href="#"><img src="img/vivo.png" alt=""></a></div>
+                <div class="border hover:border-c_primary transition rounded-md"> <a href="#"><img src="img/realme.png" alt=""></a></div>
+                <div class="border hover:border-c_primary transition rounded-md"> <a href="#"><img src="img/samsang.png" alt=""></a></div>
+                <div class="border hover:border-c_primary transition rounded-md"> <a href="#"><img src="img/google.png" alt=""></a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shop by brand  ends -->
+
+    <!-- about us starts -->
+
+    <section id="about">
+        <div class="container mt-16 space-y-4">
+
+            <div class="about_box">
+                <h1 class="text-3xl font-bold text-c_primary">
+                    Top Gadget Shop in Bangladesh
+                </h1>
+                <p class="mt-4">
+                    We are now going through a period when technology brings the <a href="#" class="border-b-2 border-c_primary hover:text-c_gray transition">revolution</a>. From dawn to dusk every moment in our life is connected to technology. Various kinds of smart gadgets become inseparable parts of our daily life. Consistent with the demand there is a huge gadget-selling market globally including Bangladesh. In Bangladesh, Apple <a href="#" class="border-b-2 border-c_primary hover:text-c_gray transition">Gadgets</a>  is a top-tier gadget-selling shop. They provide consumers a huge compilation of gadgets: Phones & Tablets, Laptops & Desktops, Accessories, Smart Home Appliances etc. Apple Gadgets satisfies its huge customer base both online and offline. Currently, serve customers with four outlets around Dhaka city at four different locations.  Best customer service makes Apple Gadgets a trustworthy retail gadgets shop in Dhaka, Bangladesh.
+                </p>
+            </div>
+
+            <div class="about_box">
+                <h1 class="text-3xl font-bold text-c_primary">
+                    Best Phones & Tablets Online Shop in Bangladesh
+                </h1>
+                <p class="mt-4">
+                    We are now going through a period when technology brings the <a href="#" class="border-b-2 border-c_primary hover:text-c_gray transition">revolution</a>. From dawn to dusk every moment in our life is connected to technology. Various kinds of smart gadgets become inseparable parts of our daily life. Consistent with the demand there is a huge gadget-selling market globally including Bangladesh. In Bangladesh, Apple <a href="#" class="border-b-2 border-c_primary hover:text-c_gray transition">Gadgets</a>  is a top-tier gadget-selling shop. They provide consumers a huge compilation of gadgets: Phones & Tablets, Laptops & Desktops, Accessories, Smart Home Appliances etc. Apple Gadgets satisfies its huge customer base both online and offline. Currently, serve customers with four outlets around Dhaka city at four different locations.  Best customer service makes Apple Gadgets a trustworthy retail gadgets shop in Dhaka, Bangladesh.
+                </p>
+            </div>
+
+            <div class="about_box">
+                <h1 class="text-3xl font-bold text-c_primary">
+                    Leading Mobile Accessories Shop in Bangladesh
+                </h1>
+                <p class="mt-4">
+                    We are now going through a period when technology brings the <a href="#" class="border-b-2 border-c_primary hover:text-c_gray transition">revolution</a>. From dawn to dusk every moment in our life is connected to technology. Various kinds of smart gadgets become inseparable parts of our daily life. Consistent with the demand there is a huge gadget-selling market globally including Bangladesh. In Bangladesh, Apple <a href="#" class="border-b-2 border-c_primary hover:text-c_gray transition">Gadgets</a>  is a top-tier gadget-selling shop. They provide consumers a huge compilation of gadgets: Phones & Tablets, Laptops & Desktops, Accessories, Smart Home Appliances etc. Apple Gadgets satisfies its huge customer base both online and offline. Currently, serve customers with four outlets around Dhaka city at four different locations.  Best customer service makes Apple Gadgets a trustworthy retail gadgets shop in Dhaka, Bangladesh.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- about us ends -->
+
+    <!-- footer starts -->
+
+    <footer class="bg-c_gray pt-10 pb-16 lg:py-10 lg:mt-10">
+        <div class="container">
+            <div class="grid md:grid-cols-4 grid-cols-2 ml-6 space-y-4">
+
+                <div class="support mt-4">
+                    <h1 class="text-c_primary font-semibold mb-6">SUPPORT</h1>
+                    <div class="footer_box flex  flex-col gap-y-6 ">
+                        <div class="phone  flex items-center gap-4">
+                            <div class="phone_icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <p>019233212343</p>
+                        </div>
+
+                        <div class="location">
+                            <div class="location_icon hover:text-c_primary transition">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="flex items-center gap-4">
+                                            <i class="fa-solid fa-location"></i>
+                                            <p>Google Map</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="links">
+                            <a href="#"><i class="fa-brands fa-facebook text-3xl  hover:text-c_primary"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram text-3xl hover:text-c_primary"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin text-3xl  hover:text-c_primary "></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube text-3xl  hover:text-c_primary" ></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="quick  ">
+                    <h1 class="text-c_primary font-semibold mb-5">Quick Links</h1>
+
+                    <ul>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">About</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Contact</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Testimonial</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                    </ul>
+                </div>
+
+                <div class="stay  ">
+                    <h1 class="text-c_primary font-semibold mb-5">Stay Connected</h1>
+
+                    <ul>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">About</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Contact</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Testimonial</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                    </ul>
+                </div>
+
+                <div class="quick  ">
+                    <h1 class="text-c_primary font-semibold mb-5">Help</h1>
+
+                    <ul>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">About</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Contact</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Testimonial</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                        <li><a class="hover:text-c_primary transition" href="#">Home</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <hr class="h-1 bg-c_primary my-4">
+
+        <div>
+            <h1 class="text-center text-c_primary">All Rights Resrved by <a href="#" class="border-b-2 border-c_primary">BD-Shop</a></h1>
+        </div>
+
+    </footer>
+
+    <!-- footer ends -->
+
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
